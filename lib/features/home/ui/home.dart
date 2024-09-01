@@ -4,6 +4,8 @@ import 'package:grocery_bloc/features/cart/ui/cart.dart';
 import 'package:grocery_bloc/features/home/bloc/home_bloc.dart';
 import 'package:grocery_bloc/features/wishlist/ui/wishlist.dart';
 
+import 'list_view.dart';
+
 class Home extends StatefulWidget {
   const Home({super.key});
 
@@ -42,6 +44,7 @@ class _HomeState extends State<Home> {
               child: CircularProgressIndicator(),
             );
           case HomeLoadedSuccessState:
+            final successState = state as HomeLoadedSuccessState;
             return Scaffold(
               appBar: AppBar(
                 title: const Text('Hello there!'),
@@ -59,6 +62,13 @@ class _HomeState extends State<Home> {
                     icon: const Icon(Icons.shopping_bag_outlined),
                   )
                 ],
+              ),
+              body: ListView.builder(
+                itemCount: successState.products.length,
+                itemBuilder: (ctx, i) => ProductTile(
+                  product: successState.products[i],
+                  homeBloc: homeBloc,
+                ),
               ),
             );
           case HomeErrorState:

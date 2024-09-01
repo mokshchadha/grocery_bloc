@@ -37,7 +37,7 @@ List<Map<String, dynamic>> groceryProducts = [
     "description": "Soft whole wheat bread, ideal for sandwiches.",
     "price": 2.00,
     "imageUrl":
-        "https://assets.bonappetit.com/photos/5c62e4a3e81bbf522a9579ce/16:9/w_4000,h_2250,c_limit/milk-bread.jpg"
+        "https://cakebee.in/cdn/shop/products/SandwichBread_e8041b4a-15e8-4e3e-b8dd-265cef13ae9f_600x.jpg?v=1678994343"
   },
   {
     "id": '6',
@@ -53,7 +53,7 @@ List<Map<String, dynamic>> groceryProducts = [
     "description": "Juicy red tomatoes, perfect for salads and sauces.",
     "price": 1.20,
     "imageUrl":
-        "https://i.pinimg.com/736x/b0/e5/d0/b0e5d0f0b275f9c420fed1ae16ea7f08.jpg"
+        "https://cdn.pixabay.com/photo/2022/09/05/09/50/tomatoes-7433786_640.jpg"
   },
   {
     "id": '8',
